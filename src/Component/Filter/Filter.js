@@ -16,7 +16,7 @@ function Filter({ MovieData , rate ,searchTerm , setSearchTerm , setRate }) {
      };
     
     const filteredMovies = MovieData.filter((movie) =>
-    movie.title.includes(searchTerm)  && movie.rating >= rate
+    movie.title.toLowerCase().includes(searchTerm.toLowerCase())  && movie.rating >= rate
     );
 
     return (

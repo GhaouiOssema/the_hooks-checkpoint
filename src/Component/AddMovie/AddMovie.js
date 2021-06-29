@@ -8,7 +8,12 @@ function AddMovie({setShow , addNewMovie }) {
         setShow(false)
     }
 
-    const [newObject , setNewObject] = useState({})
+    const [newObject , setNewObject] = useState({
+        title : "",
+        description : "",
+        posterUrl : "",
+        rating : 0
+    })
 
     const getInput = (e) => {
         setNewObject({...newObject , [e.target.name]:e.target.value})

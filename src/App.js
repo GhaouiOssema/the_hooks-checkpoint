@@ -124,7 +124,7 @@ const  App = () => {
 
     const addNewMovie = (newObject) => {
       setMovieData([...MovieData , newObject ])
-      console.log(MovieData)
+      setShow(false)
   }
 
 
